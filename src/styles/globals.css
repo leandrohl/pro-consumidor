@@ -8,15 +8,15 @@
 @theme {
   --font-dinamica: "Dinamica", sans-serif;
   --font-poppins: Poppins, sans-serif;
-
-  --color-primary: "#3C32A5";
-  --color-white: "#FFFFFF";
+  --color-primary: #3C32A5;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
 }
 
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 body {
