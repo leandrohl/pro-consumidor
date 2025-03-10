@@ -11,6 +11,11 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Pro Consumidor",
   description: "",
+  icons: {
+    icon: "/icon.png", // Ícone padrão
+    shortcut:  "/icon.png", // Ícone padrão
+    apple:  "/icon.png", // Ícone padrãoç
+  },
 };
 
 export default function RootLayout({

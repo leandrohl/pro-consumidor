@@ -18,9 +18,9 @@
   background-color: var(--color-primary);
 }
 
-
-@media (max-width > 768px) {
-  .carousel-container .swiper-button-next {
-    display: none !important;
+@media (min-width: 768px) {
+  .carousel-container .mySwiper .actions {
+    display: none;
   }
+
 }

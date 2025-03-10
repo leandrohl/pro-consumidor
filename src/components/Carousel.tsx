@@ -45,7 +45,7 @@ export default function Carousel<T>({
           <SwiperSlide key={index}>{renderItem(item, index)}</SwiperSlide>
         ))}
         {child}
-        <div className="h-12 flex justify-center items-center gap-4 mt-4">
+        <div className="actions h-12 flex justify-center items-center gap-4 mt-4">
           <button className="swiper-button-prev">
             <Image src={ArrowLeft} alt="Arrow Left" />
           </button>

@@ -9,7 +9,7 @@ export default function Button({ children, className = "", ...props }: ButtonPro
   return (
     <button
       type="button"
-      className={`px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary transition font-dinamica text-3xl ${className}`}
+      className={`px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary transition font-dinamica text-3xl cursor-pointer ${className}`}
       {...props}
     >
       {children}

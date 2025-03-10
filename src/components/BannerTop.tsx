@@ -6,7 +6,12 @@ import Button from './Button'
 export default function BannerTop() {
   return (
     <section className='flex flex-col items-center justify-center w-full h-screen'>
-      <Image src={Logo} alt='logo' width={313} />
+      <Image
+        src={Logo}
+        alt='logo'
+        width={313}
+        priority
+      />
       <h1 className='font-dinamica text-6xl text-primary'>TEVE ALGUM PROBLEMA COM SUAS REDES SOCIAIS?</h1>
       <h2 className='text-center py-10 text-xl'>
         Se preocupar pra que!? Resolvemos pra você!
