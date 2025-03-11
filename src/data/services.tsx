@@ -1,4 +1,4 @@
-import WhatsappIcon from '@/assets/icons/whatsapp.svg'
+import WhatsappIcon from '@/assets/icons/arrow-right.svg'
 
 export const services = [
   {
