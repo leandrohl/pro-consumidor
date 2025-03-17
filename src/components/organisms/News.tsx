@@ -2,8 +2,8 @@
 
 import { news } from "@/data/news";
 import Image from "next/image";
-import Button from "./Button";
-import Carousel from "./Carousel";
+import Button from "../atoms/Button";
+import Carousel from "../molecules/Carousel";
 
 export default function News() {
   return (

@@ -3,7 +3,7 @@
 import 'swiper/css';
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination } from 'swiper/modules';
-import '../styles/carousel.css'
+import '@/styles/carousel.css'
 import ArrowLeft from "@/assets/icons/arrow-left.svg"
 import ArrowRight from "@/assets/icons/arrow-right.svg"
 import Image from 'next/image'

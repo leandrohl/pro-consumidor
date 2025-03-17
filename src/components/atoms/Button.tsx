@@ -21,7 +21,7 @@ export default function Button({
   return (
     <button
       type="button"
-      className={`px-4 py-2 transition font-dinamica text-3xl cursor-pointer rounded-lg ${classNameButton} ${className}`}
+      className={`px-4 py-2 transition font-dinamica text-2xl cursor-pointer rounded-lg ${classNameButton} ${className}`}
       {...props}
     >
       {children}

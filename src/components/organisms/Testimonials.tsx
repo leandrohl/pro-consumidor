@@ -2,7 +2,7 @@
 
 import { testimonials } from "@/data/testimonials";
 import Image from "next/image";
-import Carousel from "./Carousel";
+import Carousel from "../molecules/Carousel";
 import StarIcon from "@/assets/icons/star.svg";
 
 export default function Testimonials() {
@@ -18,7 +18,7 @@ export default function Testimonials() {
       <Carousel
         items={testimonials}
         renderItem={item => (
-          <div key={item.id} className="flex flex-col py-8 px-6  bg-white mx-2 my-2 rounded-xl">
+          <div key={item.id} className="flex flex-col py-8 px-6 bg-white shadow-2xl mx-2 my-2 rounded-xl">
             <div className="flex items-center">
               <Image src={item.image} alt={item.avaliation} className="rounded-full h-12 w-12 mr-4"/>
               <div className="flex flex-col">
