@@ -4,7 +4,7 @@ import Footer from "@/components/organisms/Footer";
 import News from "@/components/organisms/News";
 import Services from "@/components/organisms/Services";
 import Testimonials from "@/components/organisms/Testimonials";
-import Whatsapp from "@/assets/icons/whatsapp.svg";
+import Whatsapp from "@/assets/icons/whatsapp-icon.svg";
 import Image from "next/image";
 
 export default function Home() {
