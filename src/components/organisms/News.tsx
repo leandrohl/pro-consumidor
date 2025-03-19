@@ -6,6 +6,7 @@ import Button from "../atoms/Button";
 import Carousel from "../molecules/Carousel";
 
 export default function News() {
+
   return (
     <section className=" flex flex-col items-center py-16">
       <h3 className="font-dinamica text-primary text-5xl">Notícias</h3>
@@ -18,7 +19,12 @@ export default function News() {
             <p className="text-black text-lg line-clamp-3 overflow-hidden min-h-[5.5rem] whitespace-pre-line">
               {item.description}
             </p>
-            <Button className="mt-4"> Leia mais </Button>
+            <Button
+              className="mt-4"
+              onClick={() => window.open(item.redirect, "_blank")}
+            >
+              Leia mais
+            </Button>
           </div>
         )}
       />
