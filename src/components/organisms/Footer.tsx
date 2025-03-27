@@ -21,7 +21,7 @@ export default function Footer() {
             Entre em contato:
           </span>
           <div className='flex items-center gap-4'>
-            <a href="https://www.facebook.com/proconsumidor" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/proconsumidoradv" target="_blank" rel="noopener noreferrer">
               <Image src={FacebookIcon} alt='Facebook' width={50} />
             </a>
             <a href="https://www.instagram.com/proconsumidoradv" target="_blank" rel="noopener noreferrer">
