@@ -33,9 +33,11 @@ export default function BannerTop() {
         <br/>
         Fale com um especialista em direito digital clicando no botão abaixo:
       </h2>
-      <Button className='px-8 md:px-16 py-2 text-3xl'>
-        Quero ser indenizado
-      </Button>
+      <a href="https://wa.me/5518991931960" target="_blank" rel="noopener noreferrer">
+        <Button className='px-8 md:px-16 py-2 text-3xl'>
+          Quero ser indenizado
+        </Button>
+      </a>
     </section>
   )
 }
