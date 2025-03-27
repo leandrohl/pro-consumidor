@@ -1,21 +1,21 @@
-import Instagram from '@/assets/images/instagram.png'
+import Facebook2 from '@/assets/images/facebook-2.jpg'
 import Facebook from '@/assets/images/facebook.jpg'
-import Instagram2 from '@/assets/images/instagram-2.jpg'
+import Instagram from '@/assets/images/instagram.png'
 
 export const news = [
   {
     id: 1,
     type: "Segurança digital",
     description: "Instagram indenizará usuária que foi hackeada: 'falha de segurança'",
-    icon: Instagram2,
+    icon: Instagram,
     redirect: "https://www.migalhas.com.br/quentes/423194/instagram-indenizara-usuaria-que-foi-hackeada--falha-de-seguranca"
   },
   {
     id: 2,
-    type: "Civil",
-    description: "Invasão a conta do Instagram gera dever de indenizar da plataforma, diz juíza",
-    icon: Instagram,
-    redirect: "https://www.conjur.com.br/2024-jul-05/invasao-a-conta-do-instagram-gera-dever-de-indenizar-da-plataforma-diz-juiza/"
+    type: "Danos morais",
+    description: "Facebook é condenado a pagar R$ 365 mil de danos materiais e R$ 15 mil de danos morais pelo cancelamento de perfil utilizado como plataforma de vendas.",
+    icon: Facebook2,
+    redirect: "https://www.migalhas.com.br/quentes/396852/loja-que-teve-perfil-em-rede-social-banido-sem-motivo-sera-indenizada"
   },
   {
     id: 3,

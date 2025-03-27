@@ -20,7 +20,7 @@ export default function News() {
               className="object-cover h-[220px] w-full"
             />
             <h4 className="text-primary font-bold text-base pt-2 pb-3">{item.type}</h4>
-            <p className="text-black text-lg line-clamp-3 overflow-hidden min-h-[5.5rem] whitespace-pre-line">
+            <p className="text-black text-lg line-clamp-5 overflow-hidden min-h-[9rem] whitespace-pre-line">
               {item.description}
             </p>
             <Button

@@ -116,7 +116,7 @@ export default function ContactUs() {
           </div>
           <Button
             variant='primary-outlined'
-            className='rounded-4xl!'
+            className='rounded-4xl! text-[28px]!'
             type="submit"
             isLoading={isLoading}
           >
