@@ -13,12 +13,15 @@ export default function Testimonials() {
   }
 
   return (
-    <section className=" flex flex-col items-center py-16">
+    <section className="flex flex-col items-center py-16">
       <h3 className="font-dinamica text-primary text-5xl mb-6">Depoimentos</h3>
       <Carousel
         items={testimonials}
         renderItem={item => (
-          <div key={item.id} className="flex flex-col py-8 px-6 bg-white shadow-2xl mx-2 my-2 rounded-xl">
+          <div
+            key={item.id}
+            className="flex flex-col mx-4 md:mx-0 mb-1 py-8 px-6 bg-white rounded-xl shadow-md "
+          >
             <div className="flex items-center">
               <Image src={item.image} alt={item.avaliation} className="rounded-full h-12 w-12 mr-4"/>
               <div className="flex flex-col">
@@ -26,7 +29,7 @@ export default function Testimonials() {
                 <span className="text-black text-sm">{item.profession}</span>
               </div>
             </div>
-            <p className="text-black text-lg text-center mt-8 px-4">&quot;{item.avaliation}&quot;</p>
+            <p className="text-black text-lg text-center mt-8 px-4 line-clamp-5 overflow-hidden min-h-[9rem] whitespace-pre-line">&quot;{item.avaliation}&quot;</p>
             <div className="flex justify-center mt-4 gap-2">
               { renderStars(item.stars) }
             </div>

@@ -21,7 +21,7 @@ export default function Home() {
         href="https://wa.me/5518991931960"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green rounded-full p-2 cursor-pointer"
+        className="fixed bottom-6 right-6 bg-green rounded-full p-2 cursor-pointer z-100"
       >
         <Image src={Whatsapp} alt="WhatsApp" width={48} />
       </a>

@@ -8,7 +8,43 @@ import Button from '../atoms/Button'
 import Input from '../atoms/Input'
 
 export default function ContactUs() {
-  const [value, setValue] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    whatsapp: "",
+    email: "",
+    socialMedia: "",
+    problem: ""
+  });
+
+  const handleChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const { name, whatsapp, email, socialMedia, problem } = formData;
+
+    const response = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name,
+        email,
+        whatsapp,
+        socialMedia,
+        problem,
+      }),
+    });
+
+    const result = await response.json();
+    if (result.success) {
+      alert("Mensagem enviada com sucesso!");
+    } else {
+      alert("Erro ao enviar mensagem.");
+    }
+  };
+
 
   return (
     <section>
@@ -19,51 +55,56 @@ export default function ContactUs() {
           <Button
             variant='primary-outlined'
             className='md:px-12 py-4 text-3xl!'
+            onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Falar com um especialista
           </Button>
         </div>
       </div>
-      <div className='flex items-center justify-center my-16'>
-        <form className='flex flex-col items-center bg-primary rounded-4xl w-[700px] mx-4 p-8 md:p-16'>
+      <div className='flex items-center justify-center py-16' id="contact-form">
+        <form
+          onSubmit={handleSubmit}
+          className='flex flex-col items-center bg-primary rounded-4xl w-[700px] mx-4 p-8 md:p-16'
+        >
           <h3 className='text-white font-dinamica text-4xl text-center'>
             UM DE NOSSOS ESPECIALISTAS ENTRARÁ EM CONTATO COM VOCÊ
           </h3>
           <div className='flex flex-col gap-4 w-full md:w-3/4 my-8'>
             <Input
               label='Nome completo'
-              value={value}
-              onChange={setValue}
+              value={formData.name}
+              onChange={(value) => handleChange("name", value)}
               placeholder='Nome completo'
             />
             <Input
               label='Whatsapp'
-              value={value}
-              onChange={setValue}
+              value={formData.whatsapp}
+              onChange={(value) => handleChange("whatsapp", value)}
               placeholder='(00) 00000-0000'
             />
             <Input
               label='Seu melhor e-mail:'
-              value={value}
-              onChange={setValue}
+              value={formData.email}
+              onChange={(value) => handleChange("email", value)}
               placeholder='email@email.com'
             />
             <Input
               label='Rede social'
-              value={value}
-              onChange={setValue}
+              value={formData.socialMedia}
+              onChange={(value) => handleChange("socialMedia", value)}
               placeholder='Instagram'
             />
             <Input
               label='Conte-nos seu problema:'
-              value={value}
-              onChange={setValue}
+              value={formData.problem}
+              onChange={(value) => handleChange("problem", value)}
               placeholder='Minha conta foi hackeada'
             />
           </div>
           <Button
             variant='primary-outlined'
             className='rounded-4xl!'
+            type="submit"
           >
             Enviar para um especialista
           </Button>

@@ -26,6 +26,7 @@ export default function Carousel<T>({
     <div id={id} className="carousel-container relative max-w-7xl mx-auto w-full">
       <Swiper
         rewind={true}
+        spaceBetween={20}
         breakpoints={{
           0: { slidesPerView: 1 },
           768: { slidesPerView: 3 }
