@@ -13,8 +13,8 @@ export const testimonials = [
   },
   {
     id: 2,
-    name: "Laura Junqueira",
-    profession: "Advogada",
+    name: "Daniela Junqueira",
+    profession: "Fonoaudióloga",
     avaliation: "Fiquei impressionado com a qualidade e rapidez do atendimento. Recomendo para quem busca um serviço eficiente e confiável.",
     stars: 5,
     image: Avatar2,

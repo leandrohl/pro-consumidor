@@ -13,7 +13,7 @@ export default function News() {
       <Carousel
         items={news}
         renderItem={item => (
-          <div key={item.id} className="flex flex-col p-8 ">
+          <div key={item.id} className="flex flex-col p-4 ">
             <Image
               src={item.icon}
               alt={item.description}

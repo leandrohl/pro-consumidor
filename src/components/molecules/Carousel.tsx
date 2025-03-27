@@ -7,7 +7,6 @@ import '@/styles/carousel.css'
 import ArrowLeft from "@/assets/icons/arrow-left.svg"
 import ArrowRight from "@/assets/icons/arrow-right.svg"
 import Image from 'next/image'
-import '@/styles/carousel.css'
 
 interface CarouselProps<T> {
   items: T[]

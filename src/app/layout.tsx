@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "@/styles/globals.css";
+import { Toaster } from "react-hot-toast";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -12,9 +13,9 @@ export const metadata: Metadata = {
   title: "Pro Consumidor",
   description: "",
   icons: {
-    icon: "/icon.png", // Ícone padrão
-    shortcut:  "/icon.png", // Ícone padrão
-    apple:  "/icon.png", // Ícone padrãoç
+    icon: "/icon.png",
+    shortcut:  "/icon.png",
+    apple:  "/icon.png",
   },
 };
 
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${poppins.variable} antialiased`}
       >
         {children}
+        <Toaster position="bottom-center" />
       </body>
     </html>
   );

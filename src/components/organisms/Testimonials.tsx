@@ -20,7 +20,7 @@ export default function Testimonials() {
         renderItem={item => (
           <div
             key={item.id}
-            className="flex flex-col mx-4 md:mx-0 mb-1 py-8 px-6 bg-white rounded-xl shadow-md "
+            className="flex flex-col mx-4 md:mx-0 mb-1 py-8 px-4 bg-white rounded-xl shadow-md "
           >
             <div className="flex items-center">
               <Image src={item.image} alt={item.avaliation} className="rounded-full h-12 w-12 mr-4"/>
