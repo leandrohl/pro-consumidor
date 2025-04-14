@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.proconsumidoradv.com.br
+
+# Sitemaps
+Sitemap: https://www.proconsumidoradv.com.br/sitemap.xml
