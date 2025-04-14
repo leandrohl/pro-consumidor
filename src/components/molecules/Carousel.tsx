@@ -47,11 +47,21 @@ export default function Carousel<T>({
         {child}
         <div className="actions h-12 flex justify-center items-center gap-4 mt-4">
           <button className="swiper-button-prev">
-            <Image src={ArrowLeft} alt="Arrow Left" />
+          <Image
+            src={ArrowLeft}
+            alt="Seta para a esquerda"
+            width={48}
+            height={48}
+          />
           </button>
           <span className="swiper-pagination flex gap-2"></span>
-          <button className="swiper-button-next ">
-            <Image src={ArrowRight} alt="Arrow Right" />
+          <button className="swiper-button-next">
+          <Image
+            src={ArrowRight}
+            alt="Seta para a direita"
+            width={48}
+            height={48}
+          />
           </button>
         </div>
       </Swiper>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "@/styles/globals.css";
 import { Toaster } from "react-hot-toast";
+import Head from "next/head";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -26,6 +27,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>Pro Consumidor | Defesa dos seus direitos nas redes sociais</title>
+        <meta name="description" content="A Pro Consumidor te ajuda a resolver problemas com redes sociais, como contas hackeadas ou bloqueadas. Entre em contato e saiba mais!" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Pro Consumidor" />
+        <meta property="og:description" content="Especialistas em ações contra redes sociais. Acesse e saiba mais." />
+        <meta property="og:url" content="https://www.proconsumidoradv.com.br/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/logo1.jpg" />
+        <meta name="twitter:card" content="Pro Consumidor" />
+        <meta name="twitter:title" content="Pro Consumidor | Defesa dos seus direitos nas redes sociais" />
+        <meta name="twitter:description" content="A Pro Consumidor te ajuda a resolver problemas com redes sociais, como contas hackeadas ou bloqueadas. Entre em contato e saiba mais!." />
+        <meta name="twitter:image" content="/logo1.jpg" />
+      </Head>
       <body
         className={`${poppins.variable} antialiased`}
       >

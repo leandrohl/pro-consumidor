@@ -23,7 +23,14 @@ export default function Home() {
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 drop-shadow-2xl rounded-full p-2 cursor-pointer z-50"
       >
-        <Image src={Whatsapp} alt="WhatsApp" width={48} />
+      <Image
+        src={Whatsapp}
+        alt="Ícone do WhatsApp"
+        width={48}
+        height={48}
+        priority
+        title="Abrir conversa no WhatsApp"
+      />
       </a>
     </div>
   );

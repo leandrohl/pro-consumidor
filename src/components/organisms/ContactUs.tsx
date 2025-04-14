@@ -56,7 +56,13 @@ export default function ContactUs() {
   return (
     <section>
       <div className="relative bg-primary justify-center flex flex-col items-center h-[400px] overflow-hidden">
-        <Image src={Background} alt="background" className='opacity-10 h-full object-cover' />
+        <Image
+          src={Background}
+          alt="Plano de fundo decorativo"
+          className="opacity-10 h-full object-cover"
+          fill
+          quality={75}
+        />
         <div className='absolute flex flex-col items-center md:w-2/4'>
           <h2 className='font-dinamica text-4xl md:text-5xl text-white text-center mb-8 px-4'>
             Nosso atendimento é 100% HUMANIZADO focado na especialidade de cada caso.
