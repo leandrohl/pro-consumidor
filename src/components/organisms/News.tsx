@@ -8,7 +8,7 @@ import Carousel from "../molecules/Carousel";
 export default function News() {
   return (
     <section className="flex flex-col items-center py-16">
-      <h3 className="font-dinamica text-primary text-5xl">Notícias</h3>
+      <h2 className="font-dinamica text-primary text-5xl">Notícias</h2>
       <Carousel
         items={news}
         renderItem={(item) => (
@@ -20,7 +20,7 @@ export default function News() {
               width={300}
               height={220}
             />
-            <h4 className="text-primary font-bold text-base pt-2 pb-3">{item.type}</h4>
+            <span className="text-primary font-bold text-base pt-2 pb-3">{item.type}</span>
             <p className="text-black text-lg line-clamp-5 overflow-hidden min-h-[9rem] whitespace-pre-line">
               {item.description}
             </p>

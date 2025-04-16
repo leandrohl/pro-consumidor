@@ -12,7 +12,7 @@ export async function POST(req: Request) {
       to: "proconsumidoradv@gmail.com",
       subject: "Novo Contato do Formulário",
       html: `
-        <h2>Novo contato recebido!</h2>
+        <h4>Novo contato recebido!</h4>
         <p><strong>Nome:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Whatsapp:</strong> ${whatsapp}</p>

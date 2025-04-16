@@ -64,9 +64,9 @@ export default function ContactUs() {
           quality={75}
         />
         <div className='absolute flex flex-col items-center md:w-2/4'>
-          <h2 className='font-dinamica text-4xl md:text-5xl text-white text-center mb-8 px-4'>
+          <h3 className='font-dinamica text-4xl md:text-5xl text-white text-center mb-8 px-4'>
             Nosso atendimento é 100% HUMANIZADO focado na especialidade de cada caso.
-          </h2>
+          </h3>
           <Button
             variant='primary-outlined'
             className='md:px-12 py-4 text-3xl!'
@@ -81,9 +81,9 @@ export default function ContactUs() {
           onSubmit={handleSubmit(onSubmit)}
           className='flex flex-col items-center bg-primary rounded-2xl md:rounded-4xl w-[700px] mx-4 p-8 md:p-16'
         >
-          <h3 className='text-white font-dinamica text-4xl text-center'>
+          <span className='text-white font-dinamica text-4xl text-center'>
             UM DE NOSSOS ESPECIALISTAS ENTRARÁ EM CONTATO COM VOCÊ
-          </h3>
+          </span>
           <div className='flex flex-col gap-4 w-full md:w-3/4 my-8'>
             <Input
               label='Nome completo'

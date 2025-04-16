@@ -21,7 +21,7 @@ export default function Testimonials() {
 
   return (
     <section className="flex flex-col items-center py-16">
-      <h3 className="font-dinamica text-primary text-5xl mb-6">Depoimentos</h3>
+      <h2 className="font-dinamica text-primary text-5xl mb-6">Depoimentos</h2>
       <Carousel
         items={testimonials}
         renderItem={(item) => (
