@@ -12,7 +12,6 @@ export default function Footer() {
           <Image
             src={Logo}
             alt="Logo da Pro Consumidor"
-            width={160}
             title="Pro Consumidor"
           />
         </div>
