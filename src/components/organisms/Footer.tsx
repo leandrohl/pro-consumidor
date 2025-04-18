@@ -1,10 +1,8 @@
 "use client"
 import Image from 'next/image'
 import Logo from '@/assets/icons/logo.svg'
-import FacebookIcon from '@/assets/icons/facebook.svg'
-import InstagramIcon from '@/assets/icons/instagram.svg'
-import WhatsappIcon from '@/assets/icons/whatsapp-icon.svg'
-import EmailIcon from '@/assets/icons/email.svg'
+import { socialLinks } from '@/data/socialLinks'
+
 
 export default function Footer() {
   return (
@@ -28,38 +26,22 @@ export default function Footer() {
             Entre em contato:
           </span>
           <div className="flex items-center gap-4">
-            <a
-              href="https://www.facebook.com/proconsumidoradv"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visitar página do Facebook"
-            >
-              <Image src={FacebookIcon} alt="Ícone do Facebook" width={34} title="Facebook" />
-            </a>
-            <a
-              href="https://www.instagram.com/proconsumidoradv"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visitar perfil do Instagram"
-            >
-              <Image src={InstagramIcon} alt="Ícone do Instagram" width={44} title="Instagram" />
-            </a>
-            <a
-              href="https://wa.me/5518991931960"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Conversar via WhatsApp"
-            >
-              <Image src={WhatsappIcon} alt="Ícone do WhatsApp" width={36} title="WhatsApp" />
-            </a>
-            <a
-              href="mailto:proconsumidoradv@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Enviar e-mail para Pro Consumidor"
-            >
-              <Image src={EmailIcon} alt="Ícone de E-mail" width={36} title="Email" />
-            </a>
+          {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.ariaLabel}
+              >
+                <Image
+                  src={social.icon}
+                  alt={`Ícone do ${social.name}`}
+                  width={36}
+                  title={social.title}
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
